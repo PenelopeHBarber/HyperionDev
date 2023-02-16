@@ -1,0 +1,65 @@
+Project: Famous people
+Google Classroom
+In this project, you’re going to make your own table with some small set of “famous people”, then make more tables about things they do and join those to create nice human readable lists.
+
+For example, here are types of famous people and the questions your data could answer:
+
+Movie stars: What movies are they in? Are they married to each other?
+Singers: What songs did they write? Where are they from?
+Authors: What books did they write?
+Fictional characters: How are they related to other characters? What books do they show up in?
+Your project is now marked as complete. You can continue working on it, of course, if you think of other ways to improve it. Keep practicing!
+
+CREATE TABLE characters (id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT, age INTEGER, hobby_id INTEGER);
+
+CREATE TABLE hobbies (id INTEGER PRIMARY KEY AUTOINCREMENT, hobby_name TEXT);
+
+CREATE TABLE relatives (id INTEGER PRIMARY KEY AUTOINCREMENT, character1_id INTEGER, character2_id INTEGER);
+
+INSERT INTO characters (name, age, hobby_id) VALUES ("Dr John Baxter", 60, 1);
+
+INSERT INTO characters (name, age, hobby_id) VALUES ("Elizabeth", 60, 2);
+
+INSERT INTO characters (name, age, hobby_id) VALUES ("Ashley", 38, 3);
+
+INSERT INTO characters (name, age, hobby_id) VALUES ("Kari", 32, 1);
+
+INSERT INTO characters (name, age, hobby_id) VALUES ("Landon", 40, 4);
+
+INSERT INTO characters (name, age, hobby_id) VALUES ("Ryan", 42, 1);
+
+INSERT INTO hobbies (hobby_name) VALUES ("Doctoring");
+
+INSERT INTO hobbies (hobby_name) VALUES ("Baking");
+
+INSERT INTO hobbies (hobby_name) VALUES ("Painting");
+
+INSERT INTO hobbies (hobby_name) VALUES ("Firefighting");
+
+INSERT INTO relatives (character1_id, character2_id) VALUES (1, 2);
+
+INSERT INTO relatives (character1_id, character2_id) VALUES (3, 5);
+
+INSERT INTO relatives (character1_id, character2_id) VALUES (4, 6);
+
+SELECT *
+FROM characters;
+
+SELECT *
+FROM hobbies;
+
+SELECT *
+FROM relatives;
+
+SELECT characters.name, hobbies.hobby_name
+FROM characters
+JOIN hobbies
+ON characters.hobby_id = hobbies.id;
+
+SELECT a.name, b.name
+FROM relatives
+JOIN characters a
+ON relatives.character1_id = a.id
+JOIN characters b
+ON relatives.character2_id = b.id
+;

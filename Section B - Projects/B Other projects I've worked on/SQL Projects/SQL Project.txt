@@ -1,0 +1,27 @@
+Project: App impersonator
+Google Classroom
+Think about your favorite apps, and pick one that stores your data- like a game that stores scores, an app that lets you post updates, etc. Now in this project, you're going to imagine that the app stores your data in a SQL database (which is pretty likely!), and write SQL statements that might look like their own SQL.
+
+CREATE a table to store the data.
+INSERT a few example rows in the table.
+Use an UPDATE to emulate what happens when you edit data in the app.
+Use a DELETE to emulate what happens when you delete data in the app.
+Your project is now marked as complete. You can continue working on it, of course, if you think of other ways to improve it. Keep practicing!
+
+ CREATE TABLE health (id INTEGER PRIMARY KEY AUTOINCREMENT, food TEXT, weight INTEGER);
+
+INSERT INTO health (food, weight) VALUES ("Banana", "72");
+INSERT INTO health (food, weight) VALUES ("Chocolate", "73");
+INSERT INTO health (food, weight) VALUES ("Celery", "71");
+INSERT INTO health (food, weight) VALUES ("Chick Peas", "70");
+INSERT INTO health (food, weight) VALUES ("Brownies", "71");
+
+SELECT * FROM health; 
+
+UPDATE health SET food = "Chocolate Coated Chick Peas" WHERE food = "Chick Peas";
+
+SELECT * FROM health;
+
+DELETE FROM health WHERE food = "Celery" ;
+
+SELECT * FROM health; 

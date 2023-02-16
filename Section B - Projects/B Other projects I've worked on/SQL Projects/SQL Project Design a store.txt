@@ -1,0 +1,28 @@
+Project: Design a store database
+Google Classroom
+Create your own store! Your store should sell one type of things, like clothing or bikes, whatever you want your store to specialize in. You should have a table for all the items in your store, and at least 5 columns for the kind of data you think you'd need to store. You should sell at least 15 items, and use select statements to order your items by price and show at least one statistic about the items.
+Your project is now marked as complete. You can continue working on it, of course, if you think of other ways to improve it. Keep practicing!
+
+CREATE TABLE my_store ("id" INTEGER PRIMARY KEY, "item" TEXT, "colour" TEXT, "price" INTEGER, "quantity in stock" 
+
+INTEGER);
+INSERT INTO my_store VALUES (0, "beanie", "green", 75, 1);
+INSERT INTO my_store VALUES (1, "beanie", "blue", 75, 1);
+INSERT INTO my_store VALUES (2, "beanie", "yellow", 75, 1);
+INSERT INTO my_store VALUES (3, "beanie", "black", 75, 1);
+INSERT INTO my_store VALUES (4, "beanie", "red", 75, 1);
+
+INSERT INTO my_store VALUES (5, "pair of gloves", "green", 100, 1);
+INSERT INTO my_store VALUES (6, "pair of gloves", "blue", 100, 1);
+INSERT INTO my_store VALUES (7, "pair of gloves", "yellow", 100, 1);
+INSERT INTO my_store VALUES (8, "pair of gloves", "black", 100, 1);
+INSERT INTO my_store VALUES (9, "pair of gloves", "red", 100, 1);
+
+INSERT INTO my_store VALUES (10, "bottle cover", "green", 50, 1);
+INSERT INTO my_store VALUES (11, "bottle cover", "blue", 50, 1);
+INSERT INTO my_store VALUES (12, "bottle cover", "yellow", 50, 1);
+INSERT INTO my_store VALUES (13, "bottle cover", "black", 50, 1);
+INSERT INTO my_store VALUES (14, "bottle cover", "red", 50, 1);
+
+SELECT * FROM my_store ORDER BY price;
+SELECT SUM(price) FROM my_store;
