@@ -1,0 +1,55 @@
+problem values:
+missing
+---
+
+which doesn't exist and which wasn't recorded?
+would I treat them differently?
+yes, doesn't exist should be left as 0
+wasn't recorded should be imputer as median?
+
+how to replace ---?
+str.replace()
+
+on the dummy set, add --- and see if it gives the same error
+it didn't...?
+
+replace --- 
+
+imputer 
+numerical medain
+categorical most frequent
+
+ 
+reproducible
+if the file is different
+
+introduction
+here are thes teps to reproduce code
+insert variables
+anything unique to the file
+
+define a function to clean
+standardise ---
+identify non string when theres only characters
+
+if they have it in place ethical
+comment on why its blank or imputed
+
+
+inconsistencies
+eg region
+northern
+northern region
+
+district: district (place)
+
+other_staff_cadre
+col AJ
+various text fields
+
+
+fuzzy matching
+
+two separate columns for gps
+
+data types

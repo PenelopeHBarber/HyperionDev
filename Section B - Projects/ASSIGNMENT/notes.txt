@@ -1,0 +1,8 @@
+split data types first
+replace --- with unknown
+impute categorical as most frequent
+
+fuzzy additional
+pandas merge
+
+df1.merge(df2, left on, right one)

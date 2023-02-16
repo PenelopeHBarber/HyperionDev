@@ -1,0 +1,11 @@
+D make sure all the data is in one column
+
+set seed for reproducibility
+
+
+
+match health facility with master file
+extra datasets: postcode for area
+
+
+df['id'].equals(df1['id'])
